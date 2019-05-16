@@ -142,6 +142,8 @@ namespace CityAndGuildsDesAndTest
                     }
 
                 }
+
+                //Assign return type values
                 myReturnType.Courses = orderedCourses;
                 myReturnType.Success = true;
                 myReturnType.Ex = null;
