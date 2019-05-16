@@ -34,6 +34,7 @@
             this.txtCourseTitle = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtCourseDate = new System.Windows.Forms.TextBox();
@@ -41,7 +42,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +49,7 @@
             // 
             this.cbCourses.FormattingEnabled = true;
             this.cbCourses.Location = new System.Drawing.Point(148, 75);
-            this.cbCourses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbCourses.Margin = new System.Windows.Forms.Padding(2);
             this.cbCourses.Name = "cbCourses";
             this.cbCourses.Size = new System.Drawing.Size(206, 21);
             this.cbCourses.TabIndex = 0;
@@ -57,7 +57,7 @@
             // btnBooking
             // 
             this.btnBooking.Location = new System.Drawing.Point(378, 76);
-            this.btnBooking.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBooking.Margin = new System.Windows.Forms.Padding(2);
             this.btnBooking.Name = "btnBooking";
             this.btnBooking.Size = new System.Drawing.Size(56, 19);
             this.btnBooking.TabIndex = 1;
@@ -68,7 +68,7 @@
             // btnAddCourse
             // 
             this.btnAddCourse.Location = new System.Drawing.Point(263, 255);
-            this.btnAddCourse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddCourse.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddCourse.Name = "btnAddCourse";
             this.btnAddCourse.Size = new System.Drawing.Size(90, 19);
             this.btnAddCourse.TabIndex = 2;
@@ -79,7 +79,7 @@
             // txtCourseTitle
             // 
             this.txtCourseTitle.Location = new System.Drawing.Point(148, 147);
-            this.txtCourseTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCourseTitle.Margin = new System.Windows.Forms.Padding(2);
             this.txtCourseTitle.Name = "txtCourseTitle";
             this.txtCourseTitle.Size = new System.Drawing.Size(206, 20);
             this.txtCourseTitle.TabIndex = 3;
@@ -106,24 +106,31 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
+            // 
             // openToolStripMenuItem1
             // 
             this.openToolStripMenuItem1.Name = "openToolStripMenuItem1";
-            this.openToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
             this.openToolStripMenuItem1.Text = "Open";
             this.openToolStripMenuItem1.Click += new System.EventHandler(this.openToolStripMenuItem1_Click);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // txtCourseDate
             // 
             this.txtCourseDate.Location = new System.Drawing.Point(148, 184);
-            this.txtCourseDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCourseDate.Margin = new System.Windows.Forms.Padding(2);
             this.txtCourseDate.Name = "txtCourseDate";
             this.txtCourseDate.Size = new System.Drawing.Size(206, 20);
             this.txtCourseDate.TabIndex = 5;
@@ -131,7 +138,7 @@
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(148, 218);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(206, 20);
             this.txtPrice.TabIndex = 6;
@@ -166,13 +173,6 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Price";
             // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.newToolStripMenuItem.Text = "New";
-            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
-            // 
             // frmOpen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,9 +189,9 @@
             this.Controls.Add(this.cbCourses);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmOpen";
-            this.Text = "Open";
+            this.Text = "Michael is the boss";
             this.Load += new System.EventHandler(this.frmOpen_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

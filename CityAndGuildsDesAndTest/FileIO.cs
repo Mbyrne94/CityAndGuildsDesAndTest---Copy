@@ -133,7 +133,7 @@ namespace CityAndGuildsDesAndTest
                     }
 
                     //Order list by date
-                    orderedCourses = myCourseList.OrderBy(x => Convert.ToDateTime(x.Date)).ToList();
+                    orderedCourses = myCourseList.OrderByDescending(x => Convert.ToDateTime(x.Date)).ToList();
 
                     //Add list element number to each course
                     for (int i = 0; i < orderedCourses.Count; i++)
